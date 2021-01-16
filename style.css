@@ -646,6 +646,11 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 20px;
     }
+        .teams .carousel .card img{
+        height: 400px;
+        width: 420px;
+        border-radius: 5px;
+    }
 }
 
 @media (max-width: 500px){
@@ -654,5 +659,17 @@ footer span a:hover{
     }    
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .teams .carousel .card img{
+        height: 300px;
+        width: 330px;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 350px){
+    .teams .carousel .card img{
+        height: 250px;
+        width: 280px;
+        border-radius: 5px;
     }
 }
