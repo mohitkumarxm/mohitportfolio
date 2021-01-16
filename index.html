@@ -299,19 +299,19 @@
                         <div class="button">
                                 <button type="submit">Send Message</button>
                         </div>
-                    </form>
-                           <script>
+                          <script>
                             const scriptURL = 'https://script.google.com/macros/s/AKfycbwUB5PyXc37gxi-uIVG1cS4LOosV029Oo-yun0v8GUpOTcwF9w0uZpTXg/exec'
                             const form = document.forms['google-sheet']
                           
                             form.addEventListener('submit', e => {
-                              e.preventDefault();
+                              e.preventDefault()
                               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                                 .then(response => alert("Thanks for Contacting Me..! I Will Contact You Soon..."))
                                 .catch(error => console.error('Error!', error.message));
                                 form.reset();
                             })
                           </script>
+                    </form>
                 </div>
             </div>
         </div>
